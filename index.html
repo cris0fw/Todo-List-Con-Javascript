@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List Javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1 class="tituloTodo">ToDo List Javascript</h1>
+
+    <div class="contenedor">
+      <form action="" class="formulario" id="formulario">
+        <input type="text" class="input tarea" placeholder="ingrese su tarea" required autofocus />
+        <button class="botoncito" type="submit">Agregar</button>
+      </form>
+
+      <div class="misTareas">
+        <h1 class="mis-tareas-titulo">Mis Tareas</h1>
+
+        <div class="tareas" id="contenedor"></div>
+      </div>
+    </div>
+
+    <template id="plantilla">
+      <div class="estructura">
+        <input type="checkbox" class="estructura-checkbox" />
+        <p class="estructura-parrafo">Realizando pedidos</p>
+        <h3><i class="fa-solid fa-circle-xmark"></i></h3>
+      </div>
+    </template>
+
+    <script src="todoList.js"></script>
+  </body>
+</html>
